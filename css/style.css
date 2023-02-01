@@ -14,15 +14,9 @@ a{
     /* min-height: 100vh; */
 }
 
-
-.slide{
-    background-image: linear-gradient(rgba(255, 255, 255, 0),rgba(0, 0, 0, 0.562)) ;
-    z-index: 99;
-}
-
-
 .left-container{
     width:70%;
+    z-index: 9;
 }
 
 .left-container img{
@@ -79,6 +73,9 @@ a{
     font-family: 'Noto Sans';
 }
 
+#email, #pass{
+    margin-top: 10px;
+}
 
 
 @media (max-width:800px){
