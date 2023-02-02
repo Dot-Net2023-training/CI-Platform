@@ -1,0 +1,182 @@
+/* body{
+    margin: 0;
+    padding: 0;
+} */
+
+a{
+    text-decoration: none;
+    color:  #414141 ;
+}
+
+.main-container{
+    display: flex;
+    justify-content: space-between ;
+    /* min-height: 100vh; */
+}
+
+.left-container{
+    width:70%;
+    z-index: 9;
+}
+
+.left-container img{
+    width:100%;
+    height: 100%;
+}
+
+.right-container{
+    width:25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 4%;   
+    position: relative;
+}
+
+.col-xl-12 h5{
+    color: #414141;
+    font-family: 'Noto Sans';
+}
+
+.login{
+    text-align: center;
+}
+
+
+.login-button{
+    border-radius: 50px;
+    /* border-color: #F88634; */
+    border: 2px solid #f88634;
+    color: #F88634;
+    background: none;
+    width: 80%;
+    height: 3rem;
+}
+
+.login-button:hover{
+    background-color: #ff7e22;
+    color: rgb(255, 255, 255);
+}
+
+.footer {
+    position: absolute;
+    width:10rem;
+    top: 90%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    
+    margin-right:auto;
+}
+
+.form-control{
+    font-family: 'Noto Sans';
+}
+
+#email, #pass{
+    margin-top: 10px;
+}
+
+#pass{
+    margin-left: 10px;
+}
+
+#show{
+    padding-right: 15px;
+}
+
+.gradient{
+    position: relative;
+}
+
+.b-g{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.022), rgba(0, 0, 0, 0.553));
+    z-index: 1;
+}
+
+.pas{
+    border: 0.7px solid rgb(196, 193, 193);
+    border-radius: 5px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding-bottom: 5px;
+}
+.carousel-indicators{
+    z-index:10 !important;
+}
+.caption{
+    z-index: 2;
+}
+
+
+@media (max-width:800px){
+    .main-container{
+        flex-direction: column;
+        min-height: 120vh;
+    }
+
+    .left-container{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .right-container{
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer{
+        position: relative;
+        bottom:0;
+    }
+
+    .form-control{
+        width:70%;
+        margin:auto;
+    }
+}
+
+@media(max-width:600px) and (min-height:200px){
+    
+    .main-container{
+        min-height: auto;
+    }
+
+    .right-container{
+        justify-content: space-around;
+        height: 36rem;
+    }
+
+    .pas{
+        width:70%;
+        margin-left: 15%;
+    }
+
+    #show{
+        margin-right: 15px;
+    }
+
+    .col-xl-12{
+        margin-bottom: 0 !important;
+    }
+
+    .footer{
+        top: 0;
+    }
+}
+
+
+@media(min-width:801px) and (max-width:1100px){
+
+
+    .footer{
+        top:90%;
+    }
+}
