@@ -1,0 +1,770 @@
+body{
+    background-color: #FAFAFA !important;
+    margin: 0;
+}
+
+.navbar{
+    background-color: rgb(255, 255, 255);
+    width:100%;
+    height: 80px;
+    display: flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    align-items: center;
+}
+
+.sidebar
+{
+    top: 70px;
+    left: 0px;
+    width: 242px;
+    height: 1279px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    transition: all 0.4s ease-in-out;
+    
+}
+
+.sidebar a{
+    font-size:large;
+    text-decoration: none;
+}
+
+.dropdown{
+    display: flex;
+    justify-content: space-around;
+    width: 22%;
+}
+
+.searchbar
+{
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 4;
+    width: 40%;
+}
+
+.searchbar img
+{
+    width: 2rem;
+    align-items: center;
+    margin-left: 30px;
+
+}
+
+.searchbar input
+{
+    width: 90%;
+    /* margin-right: 30px; */
+    border: none;
+    margin-right: 10px;
+}
+
+.profile
+{
+    display: flex;
+    /* flex-grow: 2; */
+    justify-content: space-between ;
+    width: 22%;
+}
+
+.profile img{
+    width: 2rem;
+}
+
+.user
+{
+    display: flex;
+    flex-flow: row;
+    width: 70%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-photo
+{
+    width: 7rem;
+    margin-right: 10px;
+}
+
+.user p
+{
+    font-family: 'Roboto';
+    font-weight: 200;
+    width: 45%;
+    margin-bottom: 0 !important;
+}
+
+.downarrow
+{
+    width: 5rem;
+    margin-left: 10px;
+}
+
+.icons{
+    width: 3rem;
+    margin:10px 10px 10px;
+}
+.dashboard{
+    display: flex;
+    margin: 1.5rem;
+
+}
+
+.dashboard:hover{
+
+    background-color: #fff3f4;
+    border-radius: 5px; 
+}
+
+.dashboard p:hover{
+
+    color: #C8242F;
+}
+
+
+.dashboard-search{
+    display: flex;
+    margin: 1.5rem;
+    justify-content: space-between;
+    display: none;
+}
+
+.dashboard-search img{
+    top: 119px;
+    left: 48px;
+    width: 27px;
+    height: 27px;
+
+}
+
+
+.dashboard img
+{
+    top: 119px;
+    left: 48px;
+    width: 27px;
+    height: 27px;
+}
+
+.dashboard p
+{
+    text-align: left;
+    font: normal normal normal 16px/21px Roboto;
+    color: #3E3E3E;
+    margin-bottom: 0 !important;
+    margin-top: 0.9rem;
+}
+.bottom-content{
+    display: flex;
+}
+
+.header
+{
+    text-align: left;
+    font-family: Roboto;
+    margin-left: 2.5rem;
+}
+
+.midcontainer
+{
+    /* position: relative; */
+    width: 100%;
+}
+
+.container
+{
+    padding: 0;
+}
+
+.col-auto
+{
+    display: flex;
+    align-items: center;
+    background: #FFFFFF;
+    border-radius: 5px;
+    margin: 1.5rem;
+    width: 219px;
+    height: 116px;
+}
+
+.col-auto img
+{
+    width:2.5rem;  
+    margin: 2px;
+}
+.details
+{
+    margin: 2px;
+}
+
+.details h3
+{
+    text-align: left;
+    font: normal normal medium 22px/33px Roboto;
+    letter-spacing: 0px;
+    color: #3E3E3E;
+    margin-bottom: 0;
+}
+
+.details p
+{
+    text-align: left;
+    font: normal normal normal 15px/20px Roboto;
+    letter-spacing: 0px;
+    color: #3E3E3E
+}
+
+
+.graphs
+{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+.graph1
+{
+    width: 60%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    padding:10px;
+}
+
+
+.graph1 img
+{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    padding: 10px;
+}
+.graph-head
+{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-top:10px;
+
+}
+
+.graph-head p
+{
+    /* text-align: left; */
+    font-family:Roboto;
+    letter-spacing: 0px;
+    color: #3E3E3E;
+}
+
+.time
+{
+    width:12rem;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+    color: #ADADAD;
+}
+
+
+.graph2
+{
+    width: 30%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    padding: 20px;
+    padding-top: 7px;
+}
+
+.graph-title
+{
+    color: #3E3E3E;
+    text-align: left;
+    font-family:'Roboto';
+    color: #3E3E3E;
+}
+
+.graph2 img
+{
+    width: 60%;
+    margin-left:20%;
+}
+
+.countries
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.desc
+{
+    display: flex;
+    /* justify-content: space-between; */
+    /* width: 50%; */
+}
+
+.desc p
+{
+    margin-left: 9px;
+}
+.circle
+{
+    background-color: #C8242F;
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.invoice
+{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    width:90%;
+    margin:5%;
+    padding:20px;
+    padding-top: 15px;
+}
+
+.invoice-title
+{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    font-family: 'Roboto'!important;
+}
+
+.Table-Header{
+    text-align: left;
+    font: normal normal normal 15px/20px Roboto;
+    letter-spacing: 1.5px;
+    color: #ADADAD;
+}
+
+.Table-row{
+    text-align: left;
+    font-family:'Roboto' !important;
+    font-weight: 100 !important;
+    letter-spacing: 0px;
+    color: #3E3E3E;
+}
+
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 10px;
+    border-bottom: #e3e0e0 2px solid;
+  }
+
+.common-paid p{
+    margin: 0;
+    text-align: center;
+    width: fit-content;
+    padding: 8px 25px;
+    border-radius: 10px;
+    background-color: #EBFFEF;
+    color: #3CDD5F;
+}  
+
+.failed p{
+    margin: 0;
+    text-align: center;
+    width: fit-content;
+    padding: 8px 25px;
+    border-radius: 10px;
+    background-color: #FFF5F5;
+    color: #FF4545;
+}
+
+.pending p{
+    margin: 0;
+    text-align: center;
+    width: fit-content;
+    padding: 8px 25px;
+    border-radius: 10px;
+    background-color: #F8F8F8;
+    color: #BABABA; 
+}
+
+
+
+
+
+
+/* media query starts here */
+
+@media (max-width:900px)
+{
+    body{
+        background-color: #FAFAFA !important;
+        margin: 0;
+    }
+    
+    .navbar{
+        background-color: rgb(255, 255, 255);
+        width:100%;
+        height: 80px;
+        display: flex;
+        justify-content:space-between;
+        flex-wrap:wrap;
+        align-items: center;
+    }
+    
+    .sidebar
+    {
+        top: 80px;
+        left: 0px;
+        width: 15%;
+        height: 100%;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        transition: all 0.4s ease-in-out;
+    }
+    
+    .sidebar a{
+        font-size:large;
+        text-decoration: none;
+    }
+    
+    .dropdown{
+        display: flex;
+        justify-content: space-around;
+        width: 25%;
+    }
+    
+    .searchbar
+    {
+        display: flex;
+        justify-content: space-between;
+        flex-grow: 4;
+        width: 40%;
+        display: none;
+    }
+
+    .dashboard-search{
+        display: block;
+        display: flex;
+        margin: 1.5rem;
+        justify-content: space-between;
+    
+    }
+    
+    .searchbar img
+    {
+        width: 1rem;
+        align-items: center;
+        margin-left: 30px;
+    
+    }
+    
+    .searchbar input
+    {
+        width: 50%;
+        /* margin-right: 30px; */
+        border: none;
+        margin-right: 10px;
+    }
+    
+    .profile
+    {
+        display: flex;
+        /* flex-grow: 2; */
+        justify-content: space-between ;
+        width: 35%;
+    }
+    
+    .profile img{
+        width: 2rem;
+    }
+    
+    .user
+    {
+        display: flex;
+        flex-flow: row;
+        width: 70%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .profile-photo
+    {
+        width: 7rem;
+        margin-right: 10px;
+    }
+    
+    .user p
+    {
+        font-family: 'Roboto';
+        font-weight: 200;
+        width: 45%;
+        margin-bottom: 0 !important;
+    }
+    
+    .downarrow
+    {
+        width: 5rem;
+        margin-left: 10px;
+    }
+    
+    .icons{
+        width: 3rem;
+        margin:10px 10px 10px;
+    }
+    .dashboard{
+        display: flex;
+        /* align-items: center; */
+        margin: 1.5rem;
+        width:73%;
+    }
+
+    .dashboard:hover{
+
+        background-color: #fff3f4;
+        border-radius: 5px; 
+    }
+    
+    .dashboard p:hover{
+    
+        color: #C8242F;
+    }
+    
+    
+    .dashboard img
+    {
+        top: 119px;
+        left: 48px;
+        width: 27px;
+        height: 27px;
+    }
+    
+    .dashboard p
+    {
+        text-align: left;
+        font: normal normal normal 16px/21px Roboto;
+        color: #3E3E3E;
+        margin-bottom: 0 !important;
+        margin-top: 0.9rem;
+    }
+    .bottom-content{
+        display: flex;
+    }
+    
+    .header
+    {
+        text-align: left;
+        font-family: Roboto;
+        margin-left: 2.5rem;
+    }
+    
+    .midcontainer
+    {
+        margin: 0;
+        width:60%;
+    }
+    
+    .container
+    {
+        padding: 0;
+    }
+    
+    .col-auto
+    {
+        display: flex;
+        align-items: center;
+        background: #FFFFFF;
+        border-radius: 5px;
+        margin: 1.5rem;
+        width: 219px;
+        height: 116px;
+    }
+    
+    .col-auto img
+    {
+        width:2.5rem;  
+        margin: 2px;
+    }
+    .details
+    {
+        margin: 2px;
+    }
+    
+    .details h3
+    {
+        text-align: left;
+        font: normal normal medium 22px/33px Roboto;
+        letter-spacing: 0px;
+        color: #3E3E3E;
+        margin-bottom: 0;
+    }
+    
+    .details p
+    {
+        text-align: left;
+        font: normal normal normal 15px/20px Roboto;
+        letter-spacing: 0px;
+        color: #3E3E3E
+    }
+    
+    
+    .graphs
+    {
+        display: flex;
+        justify-content: space-around;
+        padding: 30px;
+        flex-wrap: wrap;
+    }
+    .graph1
+    {
+        width: 100%;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border-radius: 5px;
+        padding:10px;
+    }
+    
+    
+    .graph1 img
+    {
+        width: 100%;
+        align-items: center;
+        display: flex;
+        padding: 10px;
+    }
+    .graph-head
+    {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        padding-top:10px;
+    
+    }
+    
+    .graph-head p
+    {
+        /* text-align: left; */
+        font-family:Roboto;
+        letter-spacing: 0px;
+        color: #3E3E3E;
+    }
+    
+    .time
+    {
+        width:12rem;
+        display: flex;
+        justify-content: space-between;
+        padding-right: 20px;
+        color: #ADADAD;
+    }
+    
+    
+    .graph2
+    {
+        width: 100%;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border-radius: 5px;
+        padding: 20px;
+        padding-top: 7px;
+        margin-top: 10px;
+    }
+    
+    .graph-title
+    {
+        color: #3E3E3E;
+        text-align: left;
+        font-family:'Roboto';
+        color: #3E3E3E;
+    }
+    
+    .graph2 img
+    {
+        width: 60%;
+        margin-left:20%;
+    }
+    
+    .countries
+    {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    
+}    
+
+@media (max-width:500px)
+{
+
+    .navbar{
+        justify-content: space-around !important;
+        width: 100%;
+        position: sticky !important;
+        top: 0;
+        z-index: 10;
+    }
+
+    .sidebar{
+        position: fixed;
+        left: 0;
+        z-index: 9;
+        width: 90%;
+    }
+
+    .header-logo{
+        width: 60%;
+    }
+
+    .profile{
+        width: 15%;
+        justify-content: space-around !important;
+
+    }
+
+    .profile p{
+        display: none;
+    }
+
+    .notification-bell{
+        display: none;
+    }
+    .user{
+        width: 40%;
+    }
+
+
+    .dashboard:hover{
+
+        background-color: #fff3f4;
+        border-radius: 5px; 
+    }
+    
+    .dashboard p:hover{
+    
+        color: #C8242F;
+    }
+
+    .multiple{
+        width: 70% !important;
+        justify-content: center;
+    }
+    
+
+    .dropdown{
+        width: 50% !important;
+    }
+
+
+    .bottom-content{
+        width: 35rem;
+    }
+
+    .graph1{
+        width:100%;
+    }
+
+    .graph2{
+        width: 400px;
+    }
+}
+

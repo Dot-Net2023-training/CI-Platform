@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/inner.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <title>Inner Page</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="dropdown">
+            <img src="/images/menu-bar.svg" alt="" style="cursor: pointer;"onclick="openNav()">
+            <img src="/images/header-logo.svg" alt="" class="header-logo">
+        </div>
+
+        <div class="searchbar">
+            <img src="/images/search-icon.svg" alt="">
+            <input type="text" name="search" id="search-bar" placeholder="Search">
+        </div>
+
+        <div class="profile">
+            <img src="/images/notification-icon.svg" alt="" class="notification-bell"> 
+            <div class="user">
+                <img src="/images/profile.png" alt="" class="profile-photo  ">
+                <p>Jhon Doe</p>
+                <img src="/images/select-downward.svg" alt="" class="downarrow">
+            </div>    
+        </div>
+    </div>
+
+    <div class="bottom-content">
+
+        <div class="sidebar" id="sidebar">
+
+            <a href="javascript:void(0)" style="margin-left:80%;" class="closebtn" onclick="closeNav()">×</a>
+
+
+            <div class="dashboard-search">
+                <img src="/images/search-icon.svg" alt="">
+                <input type="text" name="search" id="search-bar" placeholder="Search" autocomplete="off" style="width:80%; border: none;">
+            </div>
+
+            <div class="dashboard">
+                <img src="/images/dashboard-default.svg" alt="" class="icons">
+                <p >Dashboard</p>
+            </div>
+
+            <div class="dashboard" style="background-color: #FFF3F4;">
+                <img src="/images/graph-active.svg" alt="" class="icons">
+                <p style="color: #C8242F;">Analysis</p>
+            </div>
+
+            <div class="dashboard">
+                <img src="/images/inbox-default.svg" alt="" class="icons">
+                <p>Inbox</p>
+            </div>
+
+            <div class="dashboard">
+                <img src="/images/clock-default.svg" alt="" class="icons">
+                <p>History</p>
+            </div>
+
+            <div class="dashboard">
+                <img src="/images/user-default.svg" alt="" class="icons">
+                <p>User</p>
+            </div>
+
+            <div class="dashboard">
+                <img src="/images/maintenance-default.svg" alt="" class="icons">
+                <p>Maintainance</p>
+            </div>
+
+            <div class="dashboard">
+                <img src="/images/setting-default.svg" alt="" class="icons">
+                <p>Setting</p>
+            </div>
+        </div> 
+
+        <div class="analysis-title">
+            
+            <h1 style="margin-left: 60px;">Analysis</h1>
+
+            <form action="" method="">
+            <div class="container" style="margin-left: opx !important;">
+
+                <div class="onecol">
+                    <h3>One Column</h3>
+                </div>
+                
+                <div class="row py-3">
+                    
+                    <div class="col-xl-12 py-2 rounded">
+                        <input type="text" name="Name" id="name" placeholder="Name" class="form-control">
+                    </div>
+
+                    <div class="col-xl-12 py-1">
+                        
+                        <select name="" id="dropdown" class="form-control">
+                            <option value="defaultvalue" selected disabled hidden>Choose Option</option>
+                            <option value="">first option</option>
+                            <option value="">second option</option>
+                            <option value="">third option</option>
+                            <option value="">fourth option</option>
+                        </select>
+
+                    </div>
+
+                    <div class="col-xl-12 py-1">
+                        <textarea name="" id="textarea"  rows="5" placeholder="Multiple line" class="form-control"></textarea>
+                    </div>
+                </div>
+
+                <div class="twocol">
+                    <h3>Two Column</h3>
+                </div>
+
+                <div class="row">
+                    <div class="col-xl-6 my-2">
+                        <input type="text" class="form-control " id="twocol-1" placeholder="Name">
+
+                    </div>
+                    <div class="col-xl-6 my-2">
+                        <input type="text" class="form-control" id="twocol-2" placeholder="Username">
+                    </div>
+
+                    <div class="col-xl-6 my-2">
+                        <input type="password" class="form-control" id="twocol-3" placeholder="Password">
+                    </div>
+
+                    <div class="col-xl-6 my-2">
+                        <select name="" id="" class="form-control">
+                            <option value="" selected hidden disabled>Dropdown</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="thirdcol">
+                    <h3>Three Column</h3>
+                </div>
+
+                <div class="row">
+                    <div class="col-xl-4">
+                        <input type="text" id="username" class="form-control" autocomplete="off" autofocus required />
+                        <label class="floating-label">Username</label>
+                    </div>
+                    
+                    <div class="col-xl-4">
+                        <input type="password" id="password" class="form-control" autocomplete="off" required/>
+                        <label class="floating-label">Password</label>
+                    </div>
+                    
+                    <div class="col-xl-4">
+                        <input type="text" id="username" class="form-control" autocomplete="off" required/>
+                        <label class="floating-label">Disabled</label>
+                    </div>
+
+                </div>
+
+                <div class="forthcol">
+                    <h3>Four column</h3>
+                </div>
+
+                <div class="row">
+                    <div class="col-xl-3">
+                        <input type="text" id="password" class="form-control is-invalid" autocomplete="off"  required/>
+                        <label class="floating-label">Designation</label>
+                        <div class="invalid-feedback" style="margin-left:5px;">Enter valid data</div>
+                    </div>
+
+
+                    <div class="col-xl-3">
+                        <input type="text" id="username" class="form-control" autocomplete="off" required />
+                        <label class="floating-label">Name</label>
+                        <div style="font-size: 13px; margin-left: 5px;">Enter your full name as per id</div>
+                    </div>
+
+
+                    <div class="col-xl-3">
+                        <input type="password" id="password" class="form-control" autocomplete="off" required />
+                        <label class="floating-label">Password</label>
+                    </div>
+
+
+                    <div class="col-xl-3">
+                        <select name="" id="" class="form-control">
+                            <option value="" selected hidden disabled>Select</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="othercol">
+                    <h3>Other Design Elements</h3>
+                </div>
+
+                <div class="file-upload">
+                    <h4>File Upload</h4>
+                </div>
+
+                <div class="submit" style="margin-bottom: 20px;">
+                    <input type="file" name="uploadfile" id="" hidden>
+                    <button class="Upload-button">
+                        <img src="/images/cloud-upload-icon.svg" alt="">
+                        Upload
+                    </button>
+                </div>
+
+                <div class="radio" style="margin-bottom: 20px;">
+                    
+                    <h4>Radio Button</h4>
+
+                    <div class="form-check-inline">
+                        <input type="radio" name="option-2" id="" class="form-check-input">
+                        <label for="option 1" class="form-check-label">Option 1</label>
+                    </div>
+
+                    <div class="form-check-inline">
+                        <input type="radio" name="option-2" id="" class="form-check-input">
+                        <label for="option2 " class="form-check-label">Option 2</label>
+                    </div>
+
+                </div>
+
+                <div class="checkbox" style="margin-bottom: 20px;">
+
+                    <h5>Checkbox</h5>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">Option 1</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">Option 2</label>
+                    </div>
+                </div>
+
+
+                <div class="snackbar" style="margin-bottom: 20px;">
+
+                    <h5 style="margin-top:10px 0 10px 0 !important;">Snackbar</h5>
+
+                    <div class="row">
+                        <div class="col my-1 alert error  align-items-center">
+                            <img src="/images/error-icon.svg" alt="" id="error-msg">
+                            <span>This is an error message</span>
+                        </div>
+
+                        <div class="col my-1 alert info align-items-center">
+                            <img src="/images/info-icon.svg" alt="" id="info-msg">
+                            <span>This is an information message</span>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col my-1 alert warning">
+                            <img src="/images/warning-icon.svg" alt="" id="warning-msg">
+                            <span>This is a warning message</span>
+                        </div>
+
+                        <div class="col my-1 alert success">
+                            <img src="/images/success-icon.svg" alt="" id="success-msg">
+                            <span>This is a success message</span>
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+
+                <div class="calltoaction" style="margin-bottom: 20px;">
+
+                    <h3>Call to action</h3>
+
+                    <button type="button" class="btn btn-outline-danger">Primary</button>
+                    <button type="button" class="btn btn-outline-danger">Secondary</button>
+
+                </div>
+
+
+                <div class="tab">
+                    <button class="tablinks" onclick="openCity(event, 'London')">Tabs 1</button>
+                    <button class="tablinks" onclick="openCity(event, 'Paris')">Tab 2</button>
+                    <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tab 3</button>
+                  </div>
+                  
+                  <div id="London" class="tabcontent">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, laudantium sed. Rerum ratione dolore, numquam, doloremque tempora vel incidunt voluptate eos tenetur neque debitis nisi atque saepe quis explicabo non.</p>
+                  </div>
+                  
+                  <div id="Paris" class="tabcontent">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus sed, aperiam libero reprehenderit ullam quisquam, earum corrupti vel commodi suscipit, obcaecati nemo! Corrupti, pariatur. Dolore soluta repudiandae illo explicabo delectus.</p> 
+                  </div>
+                  
+                  <div id="Tokyo" class="tabcontent">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae corporis officia quia temporibus suscipit. Possimus, vel omnis velit blanditiis adipisci doloremque excepturi quidem vero perferendis fugit quo recusandae harum iure.</p>
+                  </div>
+                  
+                  
+            </div>
+            </form>
+        </div>
+    </div>
+    
+    <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+
+    </script>
+    <script>
+        function openNav() {
+        document.getElementById("sidebar").style.width = "242px";
+        }
+
+        function closeNav() {
+        document.getElementById("sidebar").style.width = "0";
+        }
+    </script>
+    
+</body>        

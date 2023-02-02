@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/dashboard.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="dropdown">
+            <img src="/images/menu-bar.svg" alt="" class="menu-bar" style="cursor: pointer;" onclick="openNav()">
+            <img src="/images/header-logo.svg" alt="" class="header-logo">
+        </div>
+
+        <div class="searchbar">
+            <img src="/images/search-icon.svg" alt="">
+            <input type="text" name="search" id="search-bar" placeholder="Search">
+        </div>
+
+        <div class="profile">
+            <img src="/images/notification-icon.svg" alt="" class="notification-bell">
+            <div class="user">
+                <img src="/images/profile.png" alt="" class="profile-photo  ">
+                <p>Jhon Doe</p>
+                <img src="/images/select-downward.svg" alt="" class="downarrow">
+            </div>    
+        </div>
+    </div>
+
+    <div class="bottom-content">
+
+        <div class="sidebar" id="sidebar" style="overflow: hidden; width:15%;">
+
+            <a href="javascript:void(0)" style="margin-left:80%;" class="closebtn" onclick="closeNav()">×</a>
+
+            <div class="dashboard-search">
+                <img src="/images/search-icon.svg" alt="">
+                <input type="text" name="search" id="search-bar" placeholder="Search" autocomplete="off" style="width:80%; border: none;">
+            </div>
+
+            <div class="dashboard" style="background-color: #FFF3F4;">
+                <img src="/images/dashboard-active.svg" alt="" class="icons">
+                <p style="color: #C8242F;">Dashboard</p>
+            </div>
+
+            <div class="dashboard">
+                <img src="/images/graph-default.svg" alt="" class="icons">
+                <p>Analysis</p>
+            </div>
+
+            <div class="dashboard">
+                <img src="/images/inbox-default.svg" alt="" class="icons">
+                <p>Inbox</p>
+            </div>
+
+            <div class="dashboard">
+                <img src="/images/clock-default.svg" alt="" class="icons">
+                <p>History</p>
+            </div>
+
+            <div class="dashboard">
+                <img src="/images/user-default.svg" alt="" class="icons">
+                <p>User</p>
+            </div>
+
+            <div class="dashboard">
+                <img src="/images/maintenance-default.svg" alt="" class="icons">
+                <p>Maintainance</p>
+            </div>
+
+            <div class="dashboard">
+                <img src="/images/setting-default.svg" alt="" class="icons">
+                <p>Setting</p>
+            </div>
+        </div>    
+
+        <div class="midcontainer" id="midcontainer">
+            <h1 class="header">Dashboard</h1>
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-auto multiple">
+                        <img src="/images/new-product.svg" alt="">
+                        <div class="details">
+                            <h3>23,456</h3>
+                            <p>New Products</p>
+                        </div>    
+                    </div>
+
+                    <div class="col-auto multiple">
+                        <img src="/images/star.svg" alt="">
+                        <div class="details">
+                            <h3>2345</h3>
+                            <p>Added Products</p>
+                        </div>    
+                    </div>
+
+                    <div class="col-auto multiple">
+                        <img src="/images/total-product.svg" alt="">
+                        <div class="details">
+                            <h3>32,456</h3>
+                            <p>Total Products</p>
+                        </div>
+                    </div>
+
+                    <div class="col-auto multiple">
+                        <img src="/images/dollar-filled.svg" alt="">
+                        <div class="details">
+                            <h3>5678</h3>
+                            <p>Today' Sales</p>
+                        </div>
+                    </div>
+
+                    <div class="col-auto multiple">
+                        <img src="/images/money-bag.svg" alt="">
+                        <div class="details">
+                            <h3>33,5342</h3>
+                            <p>Total sales</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="graphs">
+
+                <div class="graph1">
+                    <div class="graph-head">
+                        <p>Sales</p>
+
+                        <div class="time">
+                            <p>weekly</p>
+                            <p>monthly</p>
+                            <p style="border-bottom: #C8242F solid 3px; color: #C8242F;">yearly    </p>
+                        </div>
+                    </div>
+
+                    <img src="/images/data-graph.png" alt="">
+                </div>
+
+                <div class="graph2">
+
+                    <div class="graph-title">
+                        <p>Sales by country</p>
+                    </div>
+                    <img src="/images/pie-chart.svg" alt="">
+
+                    <div class="countries">
+                        <div class="up">
+                            <div class="desc">
+                                <div class="circle"></div>
+                                <p>United states of america</p>
+                            </div>
+                            <div class="desc">
+                                <div class="circle" style="background-color:darkorange;"></div>
+                                <p>Russia</p>
+                            </div>
+                        </div>
+
+                        
+                        <div class="down">
+                            <div class="desc">
+                                <div class="circle" style="background-color:#A2B86C;"></div>
+                                <p>Canada</p>
+                            </div>
+                            <div class="desc">
+                                <div class="circle" style="background-color: gold;"></div>
+                                <p>India</p>
+                            </div>    
+                        </div>                    
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="invoice">
+                <div class="invoice-title">
+                    <h4>Invoices</h4>
+                    <p style="color: #C8242F;">View All</p>
+                </div>
+
+                <div style="overflow-x:auto;">
+                    <table style="width:100%">
+
+                      <tr class="Table-Header">
+                        <th>Invoice</th>
+                        <th>Comapny Name</th>
+                        <th>Email</th>
+                        <th>Due date</th>
+                        <th>Status</th>
+                        <th>Amount</th>
+                      </tr>
+                      <tr class="Table-row">
+                        <td>651535</td>
+                        <td>Public Adjusting Frim</td>
+                        <td>georgia.young@example.com</td>
+                        <td>24 may, 2023</td>
+                        <td class="common-paid"><p>Paid</p></td>
+                        <td>$47,000</td>
+                      </tr>
+                      
+                      <tr class="Table-row">
+                        <td>558612</td>
+                        <td>Other</td>
+                        <td>jessica.hanson@example.com</td>
+                        <td>24 may, 2023</td>
+                        <td c class="common-paid"><p>Paid</p</td>
+                        <td>$98,000</td>
+                      </tr>
+                      <tr class="Table-row">
+                        <td>558612</td>
+                        <td>Vendor</td>
+                        <td>alma.lawson@example.com</td>
+                        <td>8 sep, 2023</td>
+                        <td class="common-paid"><p>Paid</p</td>
+                        <td>$20,900</td>
+                      </tr>
+                      <tr class="Table-row">
+                        <td>558612</td>
+                        <td>Property Management Company</td>
+                        <td>kenzi.lawson@example.com</td>
+                        <td>22 oct, 2023</td>
+                        <td class="common-paid"><p>Paid</p</td>
+                        <td>$10,570</td>
+                      </tr>
+                      <tr class="Table-row">
+                        <td>651535</td>
+                        <td>Subcontractor Company</td>
+                        <td>jackson.graham@example.com</td>
+                        <td>1 feb, 2023</td>
+                        <td class="failed"><p>Failed</p></td>
+                        <td>$10,200</td>
+                      </tr>
+                      <tr class="Table-row">
+                        <td>651535</td>
+                        <td>Mortgage Company</td>
+                        <td>felicia.ried@example.com</td>
+                        <td>22 oct, 2023</td>
+                        <td class="pending"><p>Pending</p></td>
+                        <td>$12,600</td>
+                      </tr>
+                      <tr class="Table-row">
+                        <td>487441</td>
+                        <td>TPA</td>
+                        <td>dolores.chamber@example.com</td>
+                        <td>21 sep, 2023</td>
+                        <td class="common-paid"><p>Paid</p</td>
+                        <td>$11,170</td>
+                      </tr>
+                      <tr class="Table-row">
+                        <td>267400</td>
+                        <td>Fire Department</td>
+                        <td>nevaeh.simmons@example.com</td>
+                        <td>17 oct, 2023</td>
+                        <td class="failed"><p>Failed</p></td>
+                        <td>$28,000</td>
+                      </tr>
+                      <tr class="Table-row">
+                        <td>449003</td>
+                        <td>Insurance Carrier</td>
+                        <td>curtis.weaver@example.com</td>
+                        <td>21 sep, 2023</td>
+                        <td class="common-paid"><p>Paid</p</td>
+                        <td>$10,000</td>
+                      </tr>
+                    </table>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function openNav() {
+        document.getElementById("sidebar").style.width = "242px";
+        document.getElementById("midcontainer").style.filter="blur(5px)";
+        document.getElementById("midcontainer").style.opacity="0.4";
+        }
+
+        function closeNav() {
+        document.getElementById("sidebar").style.width = "0";
+        document.getElementById("midcontainer").style.filter="none";
+        document.getElementById("midcontainer").style.opacity="1";
+        }
+    </script>
+</body>
+</html>
